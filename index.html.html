@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Sekretariat Rakan Muda IPGKDA</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col md:flex-row">
+
+    <!-- SIDEBAR -->
+    <aside class="w-full md:w-64 bg-gray-800 border-r border-gray-700 flex flex-col justify-between">
+        <div class="p-6">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-red-600 p-2 rounded-lg text-white">
+                    <i class="fa-solid fa-users-gear text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-lg font-bold tracking-wide text-white">SRM IPGKDA</h2>
+                    <span class="text-xs text-red-400 font-medium tracking-wider uppercase block">Sistem Exco</span>
+                </div>
+            </div>
+            
+            <p class="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mb-4">Navigasi Utama</p>
+            <nav class="space-y-1">
+                <a href="#overview" class="flex items-center space-x-3 px-4 py-2.5 rounded-lg bg-gray-700 text-white font-medium text-sm transition">
+                    <i class="fa-solid fa-chart-pie w-5"></i><span>Ringkasan</span>
+                </a>
+                <a href="#presiden" class="flex items-center space-x-3 px-4 py-2.5 rounded-lg text-gray-400 hover:bg-gray-700 hover:text-white font-medium text-sm transition">
+                    <i class="fa-solid fa-user-shield w-5"></i><span>Majlis Presiden</span>
+                </a>
+                <a href="#setiausaha" class="flex items-center space-x-3 px-4 py-2.5 rounded-lg text-gray-400 hover:bg-gray-700 hover:text-white font-medium text-sm transition">
+                    <i class="fa-solid fa-file-signature w-5"></i><span>Setiausaha & Naib</span>
+                </a>
+                <a href="#bendahari" class="flex items-center space-x-3 px-4 py-2.5 rounded-lg text-gray-400 hover:bg-gray-700 hover:text-white font-medium text-sm transition">
+                    <i class="fa-solid fa-wallet w-5"></i><span>Bendahari</span>
+                </a>
+                <a href="#exco" class="flex items-center space-x-3 px-4 py-2.5 rounded-lg text-gray-400 hover:bg-gray-700 hover:text-white font-medium text-sm transition">
+                    <i class="fa-solid fa-briefcase w-5"></i><span>Tindakan EXCO</span>
+                </a>
+                <a href="#pengurusan" class="flex items-center space-x-3 px-4 py-2.5 rounded-lg text-gray-400 hover:bg-gray-700 hover:text-white font-medium text-sm transition">
+                    <i class="fa-solid fa-sitemap w-5"></i><span>Pengurusan & Hub</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Notifikasi Sekatan -->
+        <div class="p-4 m-4 bg-red-950/40 border border-red-800/60 rounded-xl">
+            <div class="flex items-start space-x-3">
+                <i class="fa-solid fa-circle-exclamation text-red-500 mt-0.5"></i>
+                <div>
+                    <h4 class="text-xs font-semibold text-red-400 uppercase tracking-wider">Akses Terhad</h4>
+                    <p class="text-[11px] text-gray-400 mt-1">Untuk kegunaan EXCO SRM sahaja.</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="flex-1 overflow-y-auto p-6 md:p-10" id="overview">
+        <!-- HEADER -->
+        <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-6 border-b border-gray-800 mb-8 gap-4">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">SEKRETARIAT RAKAN MUDA</h1>
+                <p class="text-sm text-gray-400 mt-1">Hab Pengurusan dan Arkib Digital Rasmi SRM IPGKDA</p>
+            </div>
+            <div class="flex items-center space-x-2 bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 px-3 py-1.5 rounded-full text-xs font-medium">
+                <span class="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
+                <span>Mod Pentadbir (EXCO sahaja)</span>
+            </div>
+        </header>
+
+        <!-- UTILITY QUICK ACTIONS (PAUTAN UTAMA PENGURUSAN) -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSetYgQg4KnBLIC51_0-y5O1UHwxjAtf3wHMrHizUv1fndxhLA/viewform" target="_blank" class="p-4 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl shadow-lg hover:opacity-90 transition flex items-center space-x-4">
+                <div class="p-3 bg-white/10 rounded-lg text-white"><i class="fa-solid fa-cloud-arrow-up text-xl"></i></div>
+                <div><h3 class="text-sm font-bold text-white">Hantar Kertas Kerja</h3><p class="text-[11px] text-blue-200">Muat naik fail PDF</p></div>
+            </a>
+            <a href="https://forms.gle/uSgVMBik5J6NhYLW8" target="_blank" class="p-4 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-xl shadow-lg hover:opacity-90 transition flex items-center space-x-4">
+                <div class="p-3 bg-white/10 rounded-lg text-white"><i class="fa-solid fa-hand-holding-dollar text-xl"></i></div>
+                <div><h3 class="text-sm font-bold text-white">Tuntutan Dana</h3><p class="text-[11px] text-emerald-200 font-light">Borang tuntutan kewangan</p></div>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsCykW8M3lJoPO9IRt51oPwQibDBEGmexyHlgzx7voNuHLpA/viewform?usp=dialog" target="_blank" class="p-4 bg-gradient-to-br from-purple-600 to-fuchsia-700 rounded-xl shadow-lg hover:opacity-90 transition flex items-center space-x-4">
+                <div class="p-3 bg-white/10 rounded-lg text-white"><i class="fa-solid fa-square-poll-horizontal text-xl"></i></div>
+                <div><h3 class="text-sm font-bold text-white">Isi e-Laporan</h3><p class="text-[11px] text-purple-200 font-light">Pelaporan tamat program</p></div>
+            </a>
+            <a href="https://forms.gle/Av4pr7FSgKyB1TVU7" target="_blank" class="p-4 bg-gradient-to-br from-amber-600 to-orange-700 rounded-xl shadow-lg hover:opacity-90 transition flex items-center space-x-4">
+                <div class="p-3 bg-white/10 rounded-lg text-white"><i class="fa-solid fa-certificate text-xl"></i></div>
+                <div><h3 class="text-sm font-bold text-white">Permohonan Sijil</h3><p class="text-[11px] text-amber-200 font-light">Sijil penyertaan program</p></div>
+            </a>
+        </section>
+
+        <!-- SECTIONS BY PORTFOLIO -->
+        <div class="space-y-8">
+            
+            <!-- MAJLIS PRESIDEN & PENGURUSAN -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Majlis Presiden -->
+                <div id="presiden" class="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fa-solid fa-user-shield text-red-500 text-lg"></i>
+                        <h2 class="text-md font-bold text-white uppercase tracking-wider">Majlis Presiden</h2>
+                    </div>
+                    <div class="space-y-3">
+                        <a href="https://drive.google.com/drive/folders/1JiJUN-sKV7Atezo0D4LKyQnbmX3eBBJ9?usp=drive_link" target="_blank" class="flex items-center justify-between p-3 bg-gray-700/50 rounded-lg hover:bg-gray-700 transition border border-gray-600/50">
+                            <span class="text-sm font-medium"><i class="fa-solid fa-folder-open text-amber-500 mr-2"></i> File Majlis Presiden</span>
+                            <i class="fa-solid fa-chevron-right text-xs text-gray-400"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pengurusan SRM IPGKDA -->
+                <div id="pengurusan" class="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-sm lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fa-solid fa-sitemap text-indigo-500 text-lg"></i>
+                        <h2 class="text-md font-bold text-white uppercase tracking-wider">Pengurusan SRM IPGKDA</h2>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <a href="https://drive.google.com/drive/folders/1eIUPSG6wBK6eoiwqtBHznaO-KYNyqgC6?usp=sharing" target="_blank" class="p-3 bg-gray-700/40 rounded-lg hover:bg-gray-700 border border-gray-600/40 transition flex flex-col justify-between h-24">
+                            <i class="fa-solid fa-users text-indigo-400 text-lg"></i>
+                            <span class="text-xs font-semibold">Maklumat Organisasi</span>
+                        </a>
+                        <a href="https://docs.google.com/document/d/1RtPAPoPHGK-BcBPAhOqbYMhydexfTpcRAK0EE9h_Eiw/edit?usp=drive_link" target="_blank" class="p-3 bg-gray-700/40 rounded-lg hover:bg-gray-700 border border-gray-600/40 transition flex flex-col justify-between h-24">
+                            <i class="fa-solid fa-bullhorn text-emerald-400 text-lg"></i>
+                            <span class="text-xs font-semibold">Ayat Hebahan Konten</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1IhLwrhwgWSm4l4845poAgssesrIYLGGe?usp=sharing" target="_blank" class="p-3 bg-gray-700/40 rounded-lg hover:bg-gray-700 border border-gray-600/40 transition flex flex-col justify-between h-24">
+                            <i class="fa-solid fa-image text-amber-400 text-lg"></i>
+                            <span class="text-xs font-semibold">Kit & Logo Rakan Muda</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SETIAUSAHA & NAIB SETIAUSAHA -->
+            <div id="setiausaha" class="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-sm">
+                <div class="flex items-center space-x-3 mb-4">
+                    <i class="fa-solid fa-file-lines text-blue-500 text-lg"></i>
+                    <h2 class="text-md font-bold text-white uppercase tracking-wider">Portfolio Urus Setia (Setiausaha & Naib Setiausaha)</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Setiausaha Links -->
+                    <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-700/60">
+                        <h3 class="text-xs font-bold text-blue-400 tracking-wider uppercase mb-3"><i class="fa-solid fa-user-pen mr-1.5"></i> Setiausaha</h3>
+                        <div class="space-y-2">
+                            <a href="https://drive.google.com/drive/folders/1PuA0unSnMOasShjl-rjgKQLyTG-4GgEt?usp=drive_link" target="_blank" class="flex items-center justify-between p-2.5 bg-gray-800 rounded-lg hover:bg-gray-700 text-xs transition">
+                                <span><i class="fa-solid fa-folder text-amber-500 mr-2"></i> File Setiausaha</span>
+                                <i class="fa-solid fa-external-link text-gray-500 text-[10px]"></i>
+                            </a>
+                            <a href="https://heylink.me/rakanmudaipgkda/" target="_blank" class="flex items-center justify-between p-2.5 bg-gray-800 rounded-lg hover:bg-gray-700 text-xs transition">
+                                <span><i class="fa-solid fa-list-ol text-blue-400 mr-2"></i> Kod Rujukan Susunan File</span>
+                                <i class="fa-solid fa-external-link text-gray-500 text-[10px]"></i>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1APWvlYqQ4r4T5d7-AF7IPqS0EtTAKLdc?usp=sharing" target="_blank" class="flex items-center justify-between p-2.5 bg-gray-800 rounded-lg hover:bg-gray-700 text-xs transition">
+                                <span><i class="fa-solid fa-calendar-check text-emerald-400 mr-2"></i> Senarai Aktiviti Tahunan</span>
+                                <i class="fa-solid fa-external-link text-gray-500 text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Naib Setiausaha Links -->
+                    <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-700/60">
+                        <h3 class="text-xs font-bold text-purple-400 tracking-wider uppercase mb-3"><i class="fa-solid fa-user-check mr-1.5"></i> Naib Setiausaha</h3>
+                        <div class="space-y-2">
+                            <a href="https://drive.google.com/drive/folders/1Vv1Nno2BlFmScDSjZEDtL-3RmP9TZj1Z?usp=drive_link" target="_blank" class="flex items-center justify-between p-2.5 bg-gray-800 rounded-lg hover:bg-gray-700 text-xs transition">
+                                <span><i class="fa-solid fa-magnifying-glass text-cyan-400 mr-2"></i> Pencarian Peserta Program</span>
+                                <i class="fa-solid fa-external-link text-gray-500 text-[10px]"></i>
+                            </a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsCykW8M3lJoPO9IRt51oPwQibDBEGmexyHlgzx7voNuHLpA/viewform?usp=dialog" target="_blank" class="flex items-center justify-between p-2.5 bg-gray-800 rounded-lg hover:bg-gray-700 text-xs transition">
+                                <span><i class="fa-solid fa-square-poll-horizontal text-purple-400 mr-2"></i> E-Laporan Program</span>
+                                <i class="fa-solid fa-external-link text-gray-500 text-[10px]"></i>
+                            </a>
+                            <a href="https://www.canva.com/design/DAHCVsSWWP8/gzb_njJjf9CNPfOKans4Tw/edit?utm_content=DAHCVsSWWP8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="flex items-center justify-between p-2.5 bg-gray-800 rounded-lg hover:bg-gray-700 text-xs transition">
+                                <span><i class="fa-brands fa-canva text-pink-500 mr-2"></i> Laporan OPR SRM (Canva)</span>
+                                <i class="fa-solid fa-external-link text-gray-500 text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BENDAHARI & EXCO -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Bendahari -->
+                <div id="bendahari" class="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fa-solid fa-wallet text-emerald-500 text-lg"></i>
+                        <h2 class="text-md font-bold text-white uppercase tracking-wider">Kewangan & Bendahari</h2>
+                    </div>
+                    <div class="space-y-3">
+                        <a href="https://drive.google.com/drive/folders/1XGN6LDsPX1XIGeARGB287xYxhKoeyRda?usp=drive_link" target="_blank" class="flex items-center justify-between p-3 bg-gray-900/40 rounded-lg hover:bg-gray-700 border border-gray-700/50 text-sm transition">
+                            <span><i class="fa-solid fa-folder-closed text-amber-500 mr-2"></i> File Bendahari (Arkib)</span>
+                            <span class="text-xs text-gray-400 font-normal">Sistem Drive</span>
+                        </a>
+                        <a href="https://forms.gle/uSgVMBik5J6NhYLW8" target="_blank" class="flex items-center justify-between p-3 bg-gray-900/40 rounded-lg hover:bg-gray-700 border border-gray-700/50 text-sm transition">
+                            <span><i class="fa-solid fa-file-invoice-dollar text-emerald-400 mr-2"></i> Tuntutan Dana Rakan Muda</span>
+                            <span class="text-xs text-gray-400 font-normal">Borang Google</span>
+                        </a>
+                        <a href="https://spsb.kbs.gov.my/backend/web" target="_blank" class="flex items-center justify-between p-3 bg-gray-900/40 rounded-lg hover:bg-gray-700 border border-gray-700/50 text-sm transition">
+                            <span><i class="fa-solid fa-globe text-blue-400 mr-2"></i> Mohon Dana Online (SPSB KBS)</span>
+                            <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">Portal KBS</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- EXCO Pelaksana -->
+                <div id="exco" class="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fa-solid fa-layer-group text-amber-500 text-lg"></i>
+                        <h2 class="text-md font-bold text-white uppercase tracking-wider">Tindakan EXCO Pelaksana</h2>
+                    </div>
+                    <div class="space-y-2">
+                        <a href="https://drive.google.com/drive/folders/1j8FNJtzqYhY8cItJdpSPzYVtqqDPUQRf?usp=drive_link" target="_blank" class="flex items-center justify-between px-3 py-2 bg-gray-900/20 hover:bg-gray-700 border border-gray-700/50 rounded-lg text-xs transition">
+                            <span><i class="fa-solid fa-folder text-amber-500 mr-2"></i> Main File EXCO</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-gray-500"></i>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSetYgQg4KnBLIC51_0-y5O1UHwxjAtf3wHMrHizUv1fndxhLA/viewform" target="_blank" class="flex items-center justify-between px-3 py-2 bg-gray-900/20 hover:bg-gray-700 border border-gray-700/50 rounded-lg text-xs transition">
+                            <span><i class="fa-solid fa-file-pdf text-red-400 mr-2"></i> Hantar & Upload Kertas Kerja (PDF)</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-gray-500"></i>
+                        </a>
+                        <a href="https://forms.gle/Av4pr7FSgKyB1TVU7" target="_blank" class="flex items-center justify-between px-3 py-2 bg-gray-900/20 hover:bg-gray-700 border border-gray-700/50 rounded-lg text-xs transition">
+                            <span><i class="fa-solid fa-award text-yellow-400 mr-2"></i> Mohon Sijil Program</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-gray-500"></i>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsCykW8M3lJoPO9IRt51oPwQibDBEGmexyHlgzx7voNuHLpA/viewform?usp=dialog" target="_blank" class="flex items-center justify-between px-3 py-2 bg-gray-900/20 hover:bg-gray-700 border border-gray-700/50 rounded-lg text-xs transition">
+                            <span><i class="fa-solid fa-pen-to-square text-purple-400 mr-2"></i> Isi e-Laporan Program</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-gray-500"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MEDIA SOSIAL & AKSES LUAR -->
+            <section class="bg-gray-800 border border-gray-700 rounded-xl p-6">
+                <h3 class="text-xs font-bold text-gray-400 tracking-wider uppercase mb-4"><i class="fa-solid fa-hashtag mr-1"></i> Hub Media Sosial & Publisiti Rasmi</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+                    <a href="https://www.tiktok.com/@rakanmudaipda?is_from_webapp=1&sender_device=pc" target="_blank" class="flex items-center space-x-2 p-2.5 bg-black/40 hover:bg-black rounded-lg text-xs transition border border-gray-700">
+                        <i class="fa-brands fa-tiktok text-white"></i><span>TikTok</span>
+                    </a>
+                    <a href="https://www.instagram.com/rakanmudaipda" target="_blank" class="flex items-center space-x-2 p-2.5 bg-pink-900/20 hover:bg-pink-900/40 text-pink-400 rounded-lg text-xs transition border border-pink-900/50">
+                        <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/SekretariatRakanMudaIpgkda" target="_blank" class="flex items-center space-x-2 p-2.5 bg-blue-900/20 hover:bg-blue-900/40 text-blue-400 rounded-lg text-xs transition border border-blue-900/50">
+                        <i class="fa-brands fa-facebook-f"></i><span>Facebook</span>
+                    </a>
+                    <a href="https://t.me/srmipdastudio" target="_blank" class="flex items-center space-x-2 p-2.5 bg-sky-900/20 hover:bg-sky-900/40 text-sky-400 rounded-lg text-xs transition border border-sky-900/50">
+                        <i class="fa-solid fa-paper-plane"></i><span>Telegram Studio</span>
+                    </a>
+                    <a href="https://edunova-g.my.canva.site/srm-ipda" target="_blank" class="flex items-center space-x-2 p-2.5 bg-indigo-900/20 hover:bg-indigo-900/40 text-indigo-400 rounded-lg text-xs transition border border-indigo-900/50 col-span-2 sm:col-span-1">
+                        <i class="fa-solid fa-globe"></i><span>Tapak Web (Canva)</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="mt-12 pt-6 border-t border-gray-800 text-center text-xs text-gray-500">
+            <p>&copy; 2026 Sekretariat Rakan Muda IPGKDA. Dioptimumkan daripada struktur Linktree SRM.</p>
+        </footer>
+    </main>
+
+</body>
+</html>
